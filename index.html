@@ -23,12 +23,12 @@
         <section class="header">
             <div class="container">
                 <div class="row">
-                    <div class="col-2">
+                    <div class="col-4 col-md-2">
                         <a href="#" class="logo">
                             <img src="asset/images/logo-setara-berdaya.png" alt="">
                         </a>
                     </div>
-                    <div class="col-10">
+                    <div class="col-8 col-md-10">
                         <ul class="main-menu">
                             <li><a href="#">Home</a></li>
                             <li><a href="#">Awards</a></li>
@@ -37,6 +37,9 @@
                             <li><a href="#">Lokasi & Rundown</a></li>
                             <li><a href="#">Video</a></li>
                         </ul>
+                        <div class="mobile-menu-bt for-mobile">
+                            <i class="fa fa-bars"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -411,30 +414,38 @@
 
     <script>
         $(document).ready(function(){
+
+            $(".mobile-menu-bt").click(function(){
+                $($(this).children(".fa")).toggleClass("fa-bars fa-times");
+                $(".main-menu").toggleClass("show");
+            });
+
             $(".award-slider").owlCarousel({
-                navigation: true,
+                navigation: false,
                 autoPlay: true,
                 items: 4
             });
             $(".gallery-slider").owlCarousel({
-                navigation: true,
+                navigation: false,
                 autoPlay: true,
-                items: 5
+                items: 5,
+                itemsMobile: [768,2]
             });
             $(".news-slider").owlCarousel({
-                navigation: true,
+                navigation: false,
                 autoPlay: true,
                 items: 4
             });
             $(".rundown-slider").owlCarousel({
-                navigation: true,
+                navigation: false,
                 autoPlay: true,
                 items: 4
             });
             $(".sponsor-slider").owlCarousel({
-                navigation: true,
+                navigation: false,
                 autoPlay: true,
-                items: 6
+                items: 6,
+                itemsMobile: [768,2]
             });
 
             $(window).scroll(function() {
@@ -445,6 +456,8 @@
                 $('.header').removeClass("sticky");
             }
             });
+
+
         });
 
         
