@@ -745,7 +745,14 @@ footer p{
         padding-top: 110px;
     }
     .hero::before, .hero::after {
-        display: none;
+        width: 130px;
+        height: 55px;
+    }
+    .hero::before{
+        left: -21px;
+    }
+    .hero::after{
+        right: -21px;
     }
     .hero figure{
         padding-top: 100%;
