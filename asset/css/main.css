@@ -1052,4 +1052,25 @@ footer p{
     .social li:first-child{
         margin-left: 0;
     }
+    .fun-run figure{
+        margin-bottom: 30px;
+    }
+    .rundown-wrap{
+        margin: 10px 0;
+    }
+    .partisipan-list li{
+        width: calc((100% - 30px) / 3);
+    }
+    .book-card{
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    .book-card .pic,
+    .book-card .pic img{
+        width: 100%;
+    }
+    .book-card .text{
+        padding-left: 0;
+        margin-top: 20px;
+    }
 }
