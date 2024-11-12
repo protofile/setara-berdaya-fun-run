@@ -511,21 +511,29 @@ footer p{
 .fun-run{
     background: url(../images/bg-purple.jpg) no-repeat fixed center;
     background-size: cover;
-    padding-bottom: 200px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.fun-run .row{
+    align-items: center;
 }
 
 .fun-run ul{
     margin-bottom: 40px;
 }
 
+.fun-run figure{
+    margin-bottom: 0;
+}
+
 .rundown{
-    padding-top: 0;
     background: #2A89BE;
 }
 .rundown figure{
-    margin-top: -147px;
+    /* margin-top: -147px; */
     z-index: 3;
 }
+/*
 .rundown figure::before,
 .rundown figure::after{
     content: "";
@@ -545,7 +553,7 @@ footer p{
     background: url(../images/corner-2.png) no-repeat center;
     background-size: contain;
 }
-
+*/
 .awards{
     background: url(../images/bg-purple.jpg) no-repeat center fixed;
     background-size: cover;
@@ -777,6 +785,169 @@ footer p{
 .close-bt:hover{
     cursor: pointer;
     background: #f00;
+}
+
+.rundown-wrap{
+    width: 100%;
+    float: left;
+    padding: 40px 0;
+    background: #33397E;
+    border-radius: 23px;
+    -webkit-border-radius: 23px;
+    -moz-border-radius: 23px;
+    -ms-border-radius: 23px;
+    -o-border-radius: 23px;
+}
+.rundown-wrap h4{
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+}
+.rundown-list{
+    width: 100%;
+    float: left;
+    max-height: 300px;
+    overflow-y: auto;
+    text-align: center;
+    list-style: none;
+    padding: 0 40px;
+}
+.rundown-list li{
+    padding: 20px 40px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+.rundown-list li h5{
+    font-size: 16px;
+    margin-bottom: 0;
+}
+.rundown-list li .time{
+    padding: 3px 10px;
+    background: #2A89BE;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+/* width */
+.rundown-list::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  .rundown-list::-webkit-scrollbar-track {
+    background: rgba(255,255,255,0.15);
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  .rundown-list::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.5); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  .rundown-list::-webkit-scrollbar-thumb:hover {
+    background: #2A89BE; 
+  }
+
+.book{
+    background: #2A89BE;
+}
+.book-card{
+    width: 100%;
+    float: left;
+    background: rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+.book-card img{
+    width: 200px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.book-card .text{
+    padding-left: 20px;
+}
+.book-card .text .cat{
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 5px;
+}
+.book-card .text h4 a{
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+.book-card .text .meta-info{
+    font-size: 12px;
+    color: rgba(255,255,255,0.6);
+}
+
+.partisipan-list{
+    width: 100%;
+    float: left;
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.partisipan-list li{
+    width: calc((100% - 70px) / 7);
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.partisipan-list li img{
+    width: 100%;
+}
+.partisipan-row h3{
+    font-size: 24px;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.komunitas-list{
+    width: 100%;
+    float: left;
+    padding-left: 0;
+    list-style: none;
+}
+.komunitas-list li{
+    padding: 5px 15px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: auto;
+    background: rgba(0,0,0,0.3);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.rundown-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 24px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -ms-border-radius: 24px;
+    -o-border-radius: 24px;
 }
 
 @media only screen and (max-width:1024px){
