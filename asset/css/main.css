@@ -1070,4 +1070,7 @@ footer p{
         padding-left: 0;
         margin-top: 20px;
     }
+    .main-menu a{
+        display: block;
+    }
 }
