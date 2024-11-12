@@ -509,9 +509,8 @@ footer p{
 }
 
 .fun-run{
-    background: url(../images/bg-purple.jpg) no-repeat fixed center;
+    background: #212121;
     background-size: cover;
-    padding-top: 0;
     padding-bottom: 0;
 }
 .fun-run .row{
