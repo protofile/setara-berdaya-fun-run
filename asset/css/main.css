@@ -848,6 +848,8 @@ footer p{
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
     white-space: nowrap;
+    min-width: 60px;
+    text-align: center;
 }
 /* width */
 .rundown-list::-webkit-scrollbar {
